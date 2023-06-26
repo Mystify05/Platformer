@@ -29,7 +29,6 @@ public class KnockUp : MonoBehaviour
     {
         if(rb.gravityScale <= 0.1f && !collision.GetComponent<PlayerMovement>().IsDashing)
         {
-            //rb.velocity = new Vector2(rb.velocity.x, Vector2.up.y * power);
             float calcPower = 0.1f * Mathf.Pow(Vector2.up.y * power, Vector2.Distance(collision.transform.position, transform.position)) + 3;
             if (calcPower > 12f)
                 calcPower = 12f;

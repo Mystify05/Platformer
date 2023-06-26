@@ -31,8 +31,6 @@ public class WaypointFollower : MonoBehaviour
                 currenWaypointIndex--;
             }
         }
-        //Vector2 direction = waypoints[currenWaypointIndex].transform.position - transform.position;
-        //transform.Translate(direction.normalized * Time.deltaTime * speed);
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currenWaypointIndex].transform.position, Time.deltaTime * speed);
     }
 }

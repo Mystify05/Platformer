@@ -5098,7 +5098,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpSoundEffect: {fileID: 1302454436}
-  dashOn: 1
+  dashOn: 0
   Flying: 0
 --- !u!95 &1302454434
 Animator:
