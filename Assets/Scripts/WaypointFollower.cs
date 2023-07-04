@@ -9,6 +9,13 @@ public class WaypointFollower : MonoBehaviour
     private bool up = true;
 
     [SerializeField] private float speed = 2f;
+    public float Speed
+    {
+        get
+        {
+            return speed;
+        }
+    }
 
     private void Update()
     {
