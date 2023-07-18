@@ -10,7 +10,7 @@ public class Finish : MonoBehaviour
     {
         if(deathCount ==  null)
         {
-            Debug.Log("Death Count is null");
+            Debug.LogError(this.gameObject + " Death Count is null");
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)
