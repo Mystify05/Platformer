@@ -18,6 +18,8 @@ public class Finish : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             deathCount.GetComponent<DeathCount>().Reset();
+            PlayerPrefs.SetInt("CheckPoint", 0);
+            PlayerPrefs.Save();
         }
     }
 }

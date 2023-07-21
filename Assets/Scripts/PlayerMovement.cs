@@ -53,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Please use a jump sound effect");
     }
 
-    public void MoveToCheckPoint()
+    public void MoveToCheckPoint(int whichCheckPoint)
     {
-        transform.position = SaveCheckPointPosition.CheckPointPosition[PlayerPrefs.GetInt("CheckPoint", 0)];
+        transform.position = SaveCheckPointPosition.CheckPoints[whichCheckPoint];
     }
 
     // Update is called once per frame

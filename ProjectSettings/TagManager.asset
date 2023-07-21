@@ -8,6 +8,8 @@ TagManager:
   - Trap
   - DeathCount
   - Fan
+  - Undefined
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
